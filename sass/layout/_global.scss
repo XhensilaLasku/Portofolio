@@ -8,3 +8,30 @@ body{
 a{
     text-decoration: none;
 }
+
+h1{
+    animation: float 2s ease-in-out infinite;
+    transform: translateY(0%);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  button{
+    transition: all 0.5s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    &:hover{
+        transform: scale(1.2);
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+  }
+  

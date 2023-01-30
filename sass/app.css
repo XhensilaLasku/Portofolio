@@ -42,9 +42,6 @@ a {
   margin: auto;
   justify-content: center;
 }
-.banner__image {
-  width: 300px;
-}
 .banner__description {
   text-align: center;
 }
@@ -53,24 +50,6 @@ a {
   border: none;
 }
 
-@media (min-width: 425px) {
-  .banner {
-    display: flex;
-  }
-  .banner__img {
-    width: 50%;
-  }
-  .banner__image {
-    width: 350px;
-  }
-  .banner__description {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    width: 50%;
-    flex-direction: column;
-  }
-}
 @media (min-width: 1024px) {
   .banner {
     display: flex;
@@ -82,14 +61,11 @@ a {
     width: 50%;
     margin: 0;
   }
-  .banner__image {
-    width: 300px;
-  }
   .banner__description {
     display: flex;
     margin: auto;
     justify-content: center;
-    width: 60%;
+    width: 40%;
     flex-direction: column;
   }
 }
@@ -104,4 +80,29 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  animation: float 2s ease-in-out infinite;
+  transform: translateY(0%);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+button {
+  transition: all 0.5s ease-in-out;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  transform: scale(1.2);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=app.css.map */
