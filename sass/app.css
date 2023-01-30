@@ -1,1 +1,107 @@
-/*# sourceMappingURL=app.css.map */
+h1 {
+  font-family: "Barlow Semi Condensed";
+  color: #000000;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Barlow Semi Condensed";
+  color: #000000;
+  font-weight: normal;
+}
+
+button {
+  font-family: "Barlow Semi Condensed";
+  color: #4E6C50;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+a {
+  font-family: "Barlow Semi Condensed";
+  color: #F2DEBA;
+  font-weight: normal;
+}
+
+.container__image {
+  width: 60px;
+}
+.container__menu {
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .container__menu {
+    display: flex;
+    gap: 100px;
+  }
+}
+.banner__img {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.banner__image {
+  width: 300px;
+}
+.banner__description {
+  text-align: center;
+}
+.banner__description--button {
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 425px) {
+  .banner {
+    display: flex;
+  }
+  .banner__img {
+    width: 50%;
+  }
+  .banner__image {
+    width: 350px;
+  }
+  .banner__description {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    display: flex;
+  }
+  .banner__img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+  }
+  .banner__image {
+    width: 300px;
+  }
+  .banner__description {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    flex-direction: column;
+  }
+}
+.navbar {
+  padding: 0;
+  background-color: #4E6C50;
+}
+
+body {
+  background-color: #FFFBE9;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=app.css.map */

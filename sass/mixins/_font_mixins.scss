@@ -1,13 +1,32 @@
-// @mixin set-headline-style($headTag: h1, $brightness:dark, $fontSize: null) {
-//     font-family: "Josefin Sans";
-//     color: $dark-mode-light-gray;
-//     font-weight: normal;
-//   }
+@mixin set-navbar-style($headTag: h1, $brightness:dark, $fontSize: null) {
+    font-family: 'Barlow Semi Condensed';
+    color: $text-color;
+    font-weight: normal;
+  }
   
-//   h1 {
-//     @include set-headline-style(h1);
-//   }
-//   button {
-//     @include set-headline-style(button);
-//   }
-  
+
+@mixin set-headline-style($headTag: h1, $brightness:dark, $fontSize: null) {
+    font-family: 'Barlow Semi Condensed';
+    color: $color-text;
+    font-weight: normal;
+}
+
+@mixin set-button-style($headTag: h1, $brightness:dark, $fontSize: null) {
+  font-family: 'Barlow Semi Condensed';
+  color: $nav-color;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+   h1 {
+    @include set-headline-style(h1);
+  }
+  p{
+    @include set-headline-style(p);
+  }
+  button {
+    @include set-button-style(button);
+  }
+  a{
+    @include set-navbar-style(a);
+  }

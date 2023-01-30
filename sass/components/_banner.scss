@@ -1,0 +1,49 @@
+.banner{
+    &__img{
+        @include centerer;
+    }
+    &__image{
+        width: 300px;
+    }
+    &__description{
+        text-align: center;
+        &--button{
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+@include respond-above(sm) {
+    .banner{
+        display: flex;
+        &__img{
+            width: 50%;
+        }
+        &__image{
+            width: 350px;
+        }
+        &__description{
+            @include centerer;
+            width: 50%;
+            flex-direction: column;
+        }
+    }
+}
+@include respond-above(md) {
+    .banner{
+        display: flex;
+        &__img{
+            @include centerer;
+            width: 50%;
+            margin: 0;
+        }
+        &__image{
+            width: 300px;
+        }
+        &__description{
+            @include centerer;
+            width: 60%;
+            flex-direction: column;
+        }
+    }
+}

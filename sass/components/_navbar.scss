@@ -1,0 +1,17 @@
+.container{
+    &__image{
+        width: 60px;
+    }
+    &__menu{
+        display: flex;
+        gap: 10px;
+    }
+}
+@include respond-above(xmd) {
+    .container{
+        &__menu{
+            display: flex;
+            gap: 100px;
+        }
+    }
+}
