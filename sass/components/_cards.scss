@@ -3,4 +3,7 @@
     border: none;
     color: $text-color;  
     font-size: 20px;
+    &:hover{
+        text-decoration: underline;
+    }
     }
