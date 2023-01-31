@@ -22,6 +22,10 @@
     @include set-headline-style(h1);
     font-weight: 500;
   }
+  h2 {
+    @include set-headline-style(h2);
+    font-weight: 500;
+  }
   p{
     @include set-headline-style(p);
     font-size: 20px;

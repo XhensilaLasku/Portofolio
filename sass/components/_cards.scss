@@ -1,4 +1,31 @@
-.button{
+
+.container{
+    .card{
+       background-color:  $nav-color;
+    };
+    .card-body{
+        color: $text-color;
+    }
+    &__h1{
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 60px 0 ;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+    }
+    .button{
     background-color: transparent;
     border: none;
     color: $text-color;  
@@ -7,3 +34,4 @@
         text-decoration: underline;
     }
     }
+}
