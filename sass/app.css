@@ -2,12 +2,14 @@ h1 {
   font-family: "Barlow Semi Condensed";
   color: #000000;
   font-weight: normal;
+  font-weight: 500;
 }
 
 p {
   font-family: "Barlow Semi Condensed";
   color: #000000;
   font-weight: normal;
+  font-size: 20px;
 }
 
 button {
@@ -69,6 +71,13 @@ a {
     flex-direction: column;
   }
 }
+.button {
+  background-color: transparent;
+  border: none;
+  color: #F2DEBA;
+  font-size: 20px;
+}
+
 .navbar {
   padding: 0;
   background-color: #4E6C50;
@@ -105,4 +114,11 @@ button {
 button:hover {
   transform: scale(1.2);
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card-body__card-title {
+  color: #F2DEBA;
+}
+.card-body__card-text {
+  color: #F2DEBA;
 }/*# sourceMappingURL=app.css.map */

@@ -35,3 +35,11 @@ h1{
     }
   }
   
+  .card-body{
+    &__card-title{
+      color: $text-color;
+    }
+    &__card-text{
+      color: $text-color;
+    }
+  }

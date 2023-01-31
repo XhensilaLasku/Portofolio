@@ -10,7 +10,7 @@
         }
     }
 }
-@include respond-above(md) {
+@include respond-above(md ) {
     .banner{
         display: flex;
         &__img{
