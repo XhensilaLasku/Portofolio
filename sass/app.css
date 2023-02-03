@@ -113,6 +113,20 @@ a {
 .container .button:hover {
   text-decoration: underline;
 }
+.container .dot-full {
+  height: 13px;
+  width: 13px;
+  background-color: #F2DEBA;
+  border-radius: 50%;
+  display: inline-block;
+}
+.container .dot-empty {
+  height: 13px;
+  width: 13px;
+  border: solid 1px;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 .navbar {
   padding: 0;

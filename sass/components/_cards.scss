@@ -34,4 +34,18 @@
         text-decoration: underline;
     }
     }
+    .dot-full {
+        height: 13px;
+        width: 13px;
+        background-color: $text-color;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .dot-empty {
+        height: 13px;
+        width: 13px;
+        border: solid 1px;
+        border-radius: 50%;
+        display: inline-block;
+    }
 }
