@@ -25,9 +25,9 @@
     <div class="container">
       <img src="images\Simple_Green_Cool_Drink_Logo-removebg-preview.png" class="container__image" alt="">
     <div class="container__menu" id="navbarNav">
-          <a href="#">Projects</a>
-          <a href="#">Skills</a>
-          <a href="#">Experience</a>
+          <a href="#content">Projects</a>
+          <a href="#skills" onclick="mySkills()" >Skills</a>
+          <a href="#experience" onclick="myFunction()" >Experience</a>
     </div>
     <a href="#"> Hire Me</a>
   </div>
@@ -50,14 +50,14 @@
   </div>
 
   <!-- Project card section -->
-  <div class="container text-center">
+  <div class="container text-center" id="content">
     <h2 class="container__h1 mb-5"> Have a look at my Projects</h1>
     <div class="row">
       <div class="col-md-6">
-        <div class="card navbar mb-3">
+        <div class="card navbar mb-3" >
           <img src="images\project1.PNG" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-body__card-title">To Do App</h5>
+            <h5 class="card-body__card-title" >To Do App</h5>
             <p class="card-body__card-text">A to-do app is a productivity tool that helps users manage their tasks and responsibilities by 
               enabling them to create lists, set due dates and reminders, categorize and prioritize tasks, and mark them as completed. 
               The app also allows users to track their progress and evaluate productivity, as well as collaborate with others on tasks. 
@@ -112,8 +112,8 @@
   </div>
   
   <!-- skills section-->
-  <div class="container">
-    <h2 class="container__h1 mb-5"> My current Skills</h1>
+  <div class="container" id="experience">
+    <h2 class="container__h1 mb-5" id="skills"> My current Skills</h1>
     <div class="row">
       <div class="col-md-6  my-3">
         <div class="card">
@@ -253,6 +253,6 @@
   </div>
   
 <script src="./libs/bootstrap/js/bootstrap.bundle.min.js "></script> 
-<script src="./js/main.js"></script> 
+<script src="../main.js"></script> 
 </body>
 </html>
